@@ -10,7 +10,7 @@ import Button from "react-bootstrap/Button";
 function Navigation() {
     return (
         <Navbar collapseOnSelect expand="md">
-            <Navbar.Brand href="#home">
+            <Navbar.Brand href="/">
                 <img src={logo} alt="Shortly logo" />
             </Navbar.Brand>
             <Navbar.Toggle
@@ -24,7 +24,7 @@ function Navigation() {
                 <Nav className={styles.nav__link}>
                     <Nav.Link href="#features">Features</Nav.Link>
                     <Nav.Link href="#pricing">Pricing</Nav.Link>
-                    <Nav.Link href="#pricing">Resources</Nav.Link>
+                    <Nav.Link href="#resource">Resources</Nav.Link>
                 </Nav>
                 <Nav className={`${styles.nav__link} ms-auto`}>
                     <Nav.Link className={styles.nav__login} href="#login">
