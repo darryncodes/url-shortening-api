@@ -1,0 +1,46 @@
+/*
+Spacing system
+  2  /  4  / 8  / 12 / 16  / 24 / 32 / 48 / 64 / 80 / 96 / 128 px
+.125 / .25 / .5 /.75/ 1 / 1.5 /  2 /  3 /  4 /  5 /   6 /  8 rem
+*/
+
+/*
+Font size system
+10    / 12 /   14 / 16 /   18 /  20  /  24 /   30  /   36 /  44  /   52 /   62  /   74  /   86  / 98 px
+.625 / .75 / .875 / 1 / 1.125 / 1.25 / 1.5 / 1.875 / 2.25 / 2.75 / 3.25 / 3.875 / 4.625 / 5.375 / 6.125 rem
+*/
+
+// Colors
+
+// Primary
+
+$cyan: hsl(180, 66%, 49%);
+$dark-violet: hsl(257, 27%, 26%);
+
+// Secondary
+
+$red: hsl(0, 87%, 67%);
+
+// Neutral
+
+$white: hsl(255, 100%, 100%);
+$grey: hsl(0, 0%, 75%);
+$greyish-violet: hsl(257, 7%, 63%);
+$very-dark-blue: hsl(255, 11%, 22%);
+$very-dark-violet: hsl(260, 8%, 14%);
+
+// Responsive breakpoints
+
+$bp-sm: 36em; // 576px
+$bp-md: 48em; // 768px
+$bp-lg: 62em; // 992px
+$bp-xl: 75em; // 1200px
+$bp-xxl: 87.5em; // 1400x
+
+// Bootstrap scss theme change
+
+$theme-colors: (
+    "success": $cyan,
+);
+
+@import "bootstrap/scss/bootstrap";

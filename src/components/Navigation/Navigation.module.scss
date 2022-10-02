@@ -1,0 +1,74 @@
+@import "../../variables.scss";
+
+.nav {
+    &__toggle {
+        border: none !important;
+        outline: none;
+        margin-bottom: 0.5rem;
+    }
+
+    &__mobile {
+        background: $dark-violet;
+        border-radius: 0.75rem;
+        margin-top: 1rem;
+        padding: 1rem 0;
+        text-align: center;
+
+        @media only screen and (min-width: $bp-md) {
+            background: none;
+            border-radius: none;
+            margin-top: 0;
+            padding: 0;
+        }
+    }
+
+    &__link {
+        a {
+            color: $white;
+            font-weight: 700;
+            padding: 0.75rem 0;
+
+            @media only screen and (min-width: $bp-md) {
+                color: unset;
+            }
+        }
+
+        a:hover,
+        a:active,
+        a:visited {
+            color: $white !important;
+
+            @media only screen and (min-width: $bp-md) {
+                color: unset !important;
+            }
+        }
+    }
+
+    &__login {
+        position: relative;
+    }
+
+    &__login::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 1px;
+        width: 85%;
+        background: $white;
+        opacity: 0.5;
+    }
+
+    &__btn {
+        border-radius: 2rem;
+        color: $white;
+        font-weight: 700;
+        width: 85%;
+        margin: 0 auto;
+
+        @media only screen and (min-width: $bp-md) {
+            padding: 0 2rem;
+        }
+    }
+}
