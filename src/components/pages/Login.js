@@ -9,11 +9,10 @@ import { useAuth } from "../../contexts/AuthContext";
 
 import { Link, useNavigate } from "react-router-dom";
 
-function Signup() {
+function Login() {
     const emailRef = useRef();
     const passwordRef = useRef();
-    const passwordConfirmRef = useRef();
-    const { signup } = useAuth();
+    const { login } = useAuth();
     const [error, setError] = useState("");
     const [loading, setLoading] = useState(false);
     const navigate = useNavigate();
@@ -21,17 +20,13 @@ function Signup() {
     async function handleSubmit(e) {
         e.preventDefault();
 
-        if (passwordRef.current.value !== passwordConfirmRef.current.value) {
-            return setError("Passwords do not match");
-        }
-
         try {
             setError("");
             setLoading(true);
-            await signup(emailRef.current.value, passwordRef.current.value);
+            await login(emailRef.current.value, passwordRef.current.value);
             navigate("/dashboard");
         } catch {
-            setError("Failed to create an account");
+            setError("Failed to log in");
         }
         setLoading(false);
     }
@@ -44,7 +39,7 @@ function Signup() {
             <div>
                 <Card className="px-4" style={{ minWidth: "19rem" }}>
                     <Card.Body>
-                        <h2 className="text-center">Sign up</h2>
+                        <h2 className="text-center">Log in</h2>
                         {error && <Alert variant="danger">{error}</Alert>}
                     </Card.Body>
                     <Form className="pb-4" onSubmit={handleSubmit}>
@@ -64,30 +59,20 @@ function Signup() {
                                 required
                             />
                         </Form.Group>
-                        <Form.Group id="password-confirm">
-                            <Form.Label className="mt-2">
-                                Password confirmation
-                            </Form.Label>
-                            <Form.Control
-                                type="password"
-                                ref={passwordConfirmRef}
-                                required
-                            />
-                        </Form.Group>
                         <Button
                             disabled={loading}
                             className="w-100 mt-4 mb-2"
                             variant="success"
                             type="submit"
                         >
-                            Sign up
+                            Log in
                         </Button>
                     </Form>
                 </Card>
                 <p className="w-100 text-center mt-2">
-                    Already have an account?{" "}
-                    <Link to="/login" style={{ textDecoration: "none" }}>
-                        Log in
+                    Nedd an account?{" "}
+                    <Link to="/signup" style={{ textDecoration: "none" }}>
+                        Sign up
                     </Link>
                 </p>
             </div>
@@ -95,4 +80,4 @@ function Signup() {
     );
 }
 
-export default Signup;
+export default Login;
