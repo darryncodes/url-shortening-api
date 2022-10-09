@@ -41,6 +41,7 @@ $bp-xxl: 87.5em; // 1400x
 
 $theme-colors: (
     "success": $cyan,
+    "danger": #ff0000,
 );
 
 @import "bootstrap/scss/bootstrap";
