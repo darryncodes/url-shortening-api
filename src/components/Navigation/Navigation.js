@@ -6,6 +6,7 @@ import logo from "../../img/logo.svg";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Button from "react-bootstrap/Button";
+import { Link } from "react-router-dom";
 
 function Navigation() {
     return (
@@ -31,7 +32,9 @@ function Navigation() {
                         Login
                     </Nav.Link>
                     <Button className={styles.nav__btn} variant="success">
-                        Sign up
+                        <Link to="/signup" style={{ textDecoration: "none" }}>
+                            Sign up
+                        </Link>
                     </Button>
                 </Nav>
             </Navbar.Collapse>

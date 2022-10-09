@@ -1,18 +1,18 @@
 import React from "react";
-// import Navigation from "./Navigation/Navigation";
-import Signup from "./Signup/Signup";
+import Home from "./pages/Home";
+import Signup from "./pages/Signup";
 import { AuthProvider } from "../contexts/AuthContext";
-
-import Container from "react-bootstrap/Container";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
     return (
         <AuthProvider>
-            <Container>
-                {/* <Navigation />
-                <h1>Homepage</h1> */}
-                <Signup />
-            </Container>
+            <Router>
+                <Routes>
+                    <Route path="/" element={<Home />} />
+                    <Route path="/signup" element={<Signup />} />
+                </Routes>
+            </Router>
         </AuthProvider>
     );
 }
