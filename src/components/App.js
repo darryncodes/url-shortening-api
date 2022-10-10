@@ -5,6 +5,7 @@ import Login from "./pages/Login";
 import Dashboard from "./pages/Dashboard";
 import { AuthProvider } from "../contexts/AuthContext";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import PrivateRoute from "./PrivateRoute/PrivateRoute";
 
 function App() {
     return (
@@ -14,7 +15,14 @@ function App() {
                     <Route path="/" element={<Home />} />
                     <Route path="/signup" element={<Signup />} />
                     <Route path="/login" element={<Login />} />
-                    <Route path="/dashboard" element={<Dashboard />} />
+                    <Route
+                        path="/dashboard"
+                        element={
+                            <PrivateRoute>
+                                <Dashboard />
+                            </PrivateRoute>
+                        }
+                    />
                 </Routes>
             </Router>
         </AuthProvider>
