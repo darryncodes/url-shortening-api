@@ -7,6 +7,7 @@ import ForgotPassword from "./pages/ForgotPassword";
 import { AuthProvider } from "../contexts/AuthContext";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import PrivateRoute from "./PrivateRoute/PrivateRoute";
+import UpdateProfile from "./pages/UpdateProfile";
 
 function App() {
     return (
@@ -19,6 +20,14 @@ function App() {
                     <Route
                         path="/forgot-password"
                         element={<ForgotPassword />}
+                    />
+                    <Route
+                        path="/update-profile"
+                        element={
+                            <PrivateRoute>
+                                <UpdateProfile />
+                            </PrivateRoute>
+                        }
                     />
                     <Route
                         path="/dashboard"
