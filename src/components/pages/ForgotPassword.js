@@ -7,26 +7,26 @@ import Alert from "react-bootstrap/Alert";
 
 import { useAuth } from "../../contexts/AuthContext";
 
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
-function Login() {
+function ForgotPassword() {
     const emailRef = useRef();
-    const passwordRef = useRef();
-    const { login } = useAuth();
+    const { resetPassword } = useAuth();
     const [error, setError] = useState("");
+    const [message, setMessage] = useState("");
     const [loading, setLoading] = useState(false);
-    const navigate = useNavigate();
 
     async function handleSubmit(e) {
         e.preventDefault();
 
         try {
+            setMessage("");
             setError("");
             setLoading(true);
-            await login(emailRef.current.value, passwordRef.current.value);
-            navigate("/dashboard");
+            await resetPassword(emailRef.current.value);
+            setMessage("Check your inbox for further instructions");
         } catch {
-            setError("Failed to log in");
+            setError("Failed to reset password");
         }
         setLoading(false);
     }
@@ -39,8 +39,9 @@ function Login() {
             <div>
                 <Card className="px-4" style={{ minWidth: "19rem" }}>
                     <Card.Body>
-                        <h2 className="text-center">Log in</h2>
+                        <h2 className="text-center">Password reset</h2>
                         {error && <Alert variant="danger">{error}</Alert>}
+                        {message && <Alert variant="success">{message}</Alert>}
                     </Card.Body>
                     <Form className="pb-4" onSubmit={handleSubmit}>
                         <Form.Group id="email">
@@ -51,29 +52,18 @@ function Login() {
                                 required
                             />
                         </Form.Group>
-                        <Form.Group id="password">
-                            <Form.Label className="mt-2">Password</Form.Label>
-                            <Form.Control
-                                type="password"
-                                ref={passwordRef}
-                                required
-                            />
-                        </Form.Group>
                         <Button
                             disabled={loading}
                             className="w-100 mt-4"
                             variant="success"
                             type="submit"
                         >
-                            Log in
+                            Reset password
                         </Button>
                     </Form>
                     <p className="w-100 text-center">
-                        <Link
-                            to="/forgot-password"
-                            style={{ textDecoration: "none" }}
-                        >
-                            Forgot password?
+                        <Link to="/login" style={{ textDecoration: "none" }}>
+                            Log in
                         </Link>
                     </p>
                 </Card>
@@ -88,4 +78,4 @@ function Login() {
     );
 }
 
-export default Login;
+export default ForgotPassword;
