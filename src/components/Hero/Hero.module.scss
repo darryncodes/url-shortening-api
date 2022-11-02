@@ -1,0 +1,30 @@
+@import "./../../variables.scss";
+
+header {
+    text-align: center;
+    padding-top: 2.5rem;
+    padding-bottom: 10rem;
+    max-width: 30rem;
+    margin: 0 auto;
+
+    @media only screen and (min-width: $bp-md) {
+        text-align: left;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
+        max-width: unset;
+    }
+}
+
+.intro {
+    margin-top: 3rem;
+
+    @media only screen and (min-width: $bp-md) {
+        max-width: 25rem;
+        margin-top: 0;
+    }
+    @media only screen and (min-width: $bp-xl) {
+        max-width: 27rem;
+    }
+}

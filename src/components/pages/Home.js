@@ -1,15 +1,16 @@
 import React from "react";
 
 import Navigation from "../Navigation/Navigation";
-
-import Container from "react-bootstrap/Container";
+import Hero from "../Hero/Hero";
+import Body from "../Body/Body";
 
 function Home() {
     return (
-        <Container>
+        <>
             <Navigation />
-            <h1>Homepage</h1>
-        </Container>
+            <Hero />
+            <Body />
+        </>
     );
 }
 

@@ -1,0 +1,130 @@
+@import "./../../variables.scss";
+
+.body {
+    background-color: $grey;
+    padding: 5rem 0;
+
+    &__header {
+        text-align: center;
+        padding: 5rem 0;
+
+        @media only screen and (min-width: $bp-md) {
+            max-width: 30rem;
+            margin: 0 auto;
+        }
+    }
+
+    &__cards {
+        display: flex;
+        flex-direction: column;
+        gap: 4.625rem;
+
+        @media only screen and (min-width: $bp-lg) {
+            flex-direction: row;
+            gap: 1.5rem;
+        }
+    }
+
+    &__card::before {
+        content: "";
+        position: absolute;
+        top: -2rem;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 5rem;
+        width: 5rem;
+        border-radius: 50%;
+        background-color: $very-dark-blue;
+        background-repeat: no-repeat;
+        background-position: center;
+
+        @media only screen and (min-width: $bp-lg) {
+            left: 10%;
+            transform: translateX(-10%);
+        }
+    }
+
+    &__card {
+        text-align: center;
+        position: relative;
+        background-color: $white;
+        padding: 1.5rem;
+        padding-top: 4.625rem;
+        max-width: 22rem;
+        margin: 0 auto;
+        border-radius: 0.25rem;
+
+        @media only screen and (min-width: $bp-lg) {
+            text-align: left;
+        }
+
+        &--one::before {
+            background-image: url(../../img/icon-brand-recognition.svg);
+        }
+
+        &--two::before {
+            background-image: url(../../img/icon-detailed-records.svg);
+        }
+
+        &--three::before {
+            background-image: url(../../img/icon-fully-customizable.svg);
+        }
+
+        &--two {
+            @media only screen and (min-width: $bp-lg) {
+                transform: translateY(1.5rem);
+            }
+        }
+        &--three {
+            @media only screen and (min-width: $bp-lg) {
+                transform: translateY(3rem);
+            }
+        }
+
+        &--one::after {
+            content: "";
+            position: absolute;
+            bottom: -49%;
+            right: 49%;
+            transform: translateY(-49%);
+            height: 5rem;
+            width: 5px;
+            background-color: $cyan;
+
+            @media only screen and (min-width: $bp-lg) {
+                bottom: 50%;
+                right: -21%;
+                height: 5px;
+                width: 4rem;
+            }
+            @media only screen and (min-width: $bp-xl) {
+                right: -25%;
+                height: 5px;
+                width: 5.5rem;
+            }
+        }
+
+        &--two::after {
+            content: "";
+            position: absolute;
+            bottom: -46%;
+            right: 49%;
+            transform: translateY(-40%);
+            height: 5rem;
+            width: 5px;
+            background-color: $cyan;
+
+            @media only screen and (min-width: $bp-lg) {
+                bottom: 60%;
+                right: -21%;
+                height: 5px;
+                width: 4rem;
+            }
+            @media only screen and (min-width: $bp-xl) {
+                right: -25%;
+                height: 5px;
+                width: 5.5rem;
+            }
+        }
+    }
+}

@@ -12,6 +12,9 @@
 /build
 
 # misc
+
+/spacing-system
+
 .DS_Store
 .env.local
 .env.development.local
