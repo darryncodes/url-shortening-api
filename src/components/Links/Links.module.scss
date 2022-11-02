@@ -1,0 +1,22 @@
+@import "./../../variables.scss";
+
+.links {
+    background-image: url(./../../img/bg-boost-mobile.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: $dark-violet;
+    background-size: 100%;
+    padding: 4rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    @media only screen and (min-width: $bp-lg) {
+        background-image: url(./../../img/bg-boost-desktop.svg);
+    }
+
+    &__heading {
+        color: $white;
+    }
+}
