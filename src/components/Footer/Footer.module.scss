@@ -1,0 +1,55 @@
+@import "./../../variables.scss";
+
+.footer {
+    background-color: $very-dark-violet;
+    padding: 4rem 0;
+    text-align: center;
+
+    @media only screen and (min-width: $bp-md) {
+        text-align: left;
+    }
+
+    &__img {
+        margin-bottom: 3rem;
+
+        @media only screen and (min-width: $bp-md) {
+            margin-right: 2rem;
+        }
+        @media only screen and (min-width: $bp-lg) {
+            margin-right: 10rem;
+        }
+    }
+
+    &__icon {
+        fill: $white;
+        &:hover {
+            fill: $cyan;
+        }
+    }
+}
+
+ul {
+    list-style: none;
+    padding: 0 !important;
+}
+
+li {
+    padding-bottom: 0.45rem;
+}
+
+a {
+    text-decoration: none !important;
+
+    &:hover {
+        color: $cyan !important;
+    }
+}
+
+svg {
+    stroke: $white;
+    margin-right: 1rem;
+}
+
+svg:hover {
+    stroke: $cyan;
+}
