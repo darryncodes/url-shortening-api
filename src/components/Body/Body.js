@@ -1,6 +1,7 @@
 import React from "react";
 
 import Container from "react-bootstrap/Container";
+import Output from "../Output/Output";
 
 import styles from "./Body.module.scss";
 
@@ -8,6 +9,7 @@ function Body() {
     return (
         <section className={styles.body}>
             <Container>
+                <Output />
                 <div className={styles.body__header}>
                     <h2>Advanced statistics</h2>
                     <p>
