@@ -14,7 +14,7 @@ function Footer() {
                     <img src={logo} alt="" />
                 </div>
                 <Col>
-                    <h3>Features</h3>
+                    <h3 className={styles.footer__heading}>Features</h3>
                     <ul>
                         <li>
                             <a href="/#">Link shortening</a>
@@ -28,7 +28,7 @@ function Footer() {
                     </ul>
                 </Col>
                 <Col>
-                    <h3>Resources</h3>
+                    <h3 className={styles.footer__heading}>Resources</h3>
                     <ul>
                         <li>
                             <a href="/#">Blog</a>
@@ -42,7 +42,7 @@ function Footer() {
                     </ul>
                 </Col>
                 <Col>
-                    <h3>Company</h3>
+                    <h3 className={styles.footer__heading}>Company</h3>
                     <ul>
                         <li>
                             <a href="/#">About</a>

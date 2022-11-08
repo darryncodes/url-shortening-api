@@ -20,6 +20,10 @@
         }
     }
 
+    &__heading {
+        color: $white;
+    }
+
     &__icon {
         fill: $white;
         &:hover {

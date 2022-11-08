@@ -1,0 +1,39 @@
+@import "./../../variables.scss";
+
+form {
+    padding: 2rem;
+    border-radius: 0.65rem;
+    background-color: $dark-violet;
+    display: flex;
+    flex-direction: column;
+
+    @media only screen and (min-width: $bp-md) {
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+input {
+    padding: 0.375rem 0.75rem;
+    border-radius: 0.65rem;
+
+    @media only screen and (min-width: $bp-md) {
+        width: 80%;
+    }
+    @media only screen and (min-width: $bp-lg) {
+        width: 85%;
+    }
+    @media only screen and (min-width: $bp-xl) {
+        width: 88%;
+    }
+}
+
+.btn {
+    border-radius: 0.65rem !important;
+    margin-top: 1rem;
+
+    @media only screen and (min-width: $bp-md) {
+        margin-top: 0;
+        margin-left: 1rem;
+    }
+}

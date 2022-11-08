@@ -5,6 +5,7 @@ import Button from "react-bootstrap/Button";
 
 import styles from "./Hero.module.scss";
 import heroImage from "../../img/illustration-working.svg";
+import Input from "../Input/Input";
 
 function Hero() {
     return (
@@ -24,6 +25,7 @@ function Hero() {
                     </Button>
                 </div>
             </header>
+            <Input />
         </Container>
     );
 }
