@@ -1,23 +1,43 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import Button from "react-bootstrap/Button";
 
 import styles from "./Output.module.scss";
 
-function Output() {
+function Output(props) {
+    const shortLink = useRef("");
+    const [copySuccess, setCopySuccess] = useState("Copy");
+
+    const copyToClipbpard = () => {
+        navigator.clipboard.writeText(shortLink.current.innerText);
+        setCopySuccess("Copied!");
+        setTimeout(() => {
+            setCopySuccess("Copy");
+        }, 1750);
+    };
+
     return (
-        <div className={styles.output}>
-            <p className={styles.output__link}>
-                https://www.test/test-link.com
-            </p>
-            <div className={styles.output__result}>
-                <p className={styles["output__shortened-link"]}>
-                    https://rel.ink/k41Kyk
-                </p>
-                <Button variant="success" className={styles.output__btn}>
-                    Copy
-                </Button>
-            </div>
-        </div>
+        <>
+            {props.output.map((links) => (
+                <div className={styles.output}>
+                    <p className={styles.output__link}>{links.link}</p>
+                    <div className={styles.output__result}>
+                        <p
+                            className={styles["output__shortened-link"]}
+                            ref={shortLink}
+                        >
+                            {links.short}
+                        </p>
+                        <Button
+                            variant="success"
+                            className={styles.output__btn}
+                            onClick={copyToClipbpard}
+                        >
+                            {copySuccess}
+                        </Button>
+                    </div>
+                </div>
+            ))}
+        </>
     );
 }
 

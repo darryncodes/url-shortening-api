@@ -3,7 +3,9 @@
 .output {
     background-color: $white;
     padding: 2rem;
+    margin-bottom: 1rem;
     border-radius: 0.65rem;
+    margin-top: 2rem;
 
     @media only screen and (min-width: $bp-md) {
         display: flex;
@@ -11,6 +13,7 @@
         justify-content: space-between;
         align-items: center;
         padding: 1rem;
+        margin-top: 0;
     }
 
     &__link {
@@ -28,6 +31,11 @@
         }
     }
 
+    &__form {
+        display: flex;
+        align-items: center;
+    }
+
     &__shortened-link {
         color: $cyan;
 
@@ -37,7 +45,7 @@
     }
 
     &__btn {
-        border-radius: 0.65rem;
+        border-radius: 0.65rem !important;
         width: 100%;
 
         @media only screen and (min-width: $bp-md) {

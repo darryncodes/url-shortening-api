@@ -5,11 +5,10 @@ import Button from "react-bootstrap/Button";
 
 import styles from "./Hero.module.scss";
 import heroImage from "../../img/illustration-working.svg";
-import Input from "../Input/Input";
 
 function Hero() {
     return (
-        <Container>
+        <Container className="position-relative">
             <header>
                 <div>
                     <img src={heroImage} alt="" />
@@ -25,7 +24,6 @@ function Hero() {
                     </Button>
                 </div>
             </header>
-            <Input />
         </Container>
     );
 }

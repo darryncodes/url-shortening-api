@@ -1,15 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 
 import Container from "react-bootstrap/Container";
+import Input from "../Input/Input";
 import Output from "../Output/Output";
 
 import styles from "./Body.module.scss";
 
 function Body() {
+    const [links, setLinks] = useState([]);
+
+    const linkHandler = (originalLink, shortLink) => {
+        setLinks((prevState) => {
+            return [...prevState, { link: originalLink, short: shortLink }];
+        });
+    };
+
     return (
         <section className={styles.body}>
-            <Container>
-                <Output />
+            <Container className="position-relative">
+                <Input input={linkHandler} />
+                <Output output={links} />
                 <div className={styles.body__header}>
                     <h2>Advanced statistics</h2>
                     <p>
