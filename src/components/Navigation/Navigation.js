@@ -42,13 +42,13 @@ function Navigation() {
                         </Nav.Link>
                     </Nav>
                     <Nav className={`${styles.nav__link} ms-auto`}>
-                        <Nav.Link
-                            className={`${styles.nav__login} ${styles.nav__focus}`}
+                        <Link
                             to="/login"
+                            className={`${styles.nav__login} ${styles.nav__focus}`}
                             style={{ textDecoration: "none" }}
                         >
                             Log in
-                        </Nav.Link>
+                        </Link>
                         <Link
                             to="/signup"
                             style={{ textDecoration: "none" }}
