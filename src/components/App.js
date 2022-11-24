@@ -12,7 +12,7 @@ import UpdateProfile from "./pages/UpdateProfile";
 function App() {
     return (
         <AuthProvider>
-            <Router>
+            <Router basename="/">
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/signup" element={<Signup />} />
