@@ -29,7 +29,8 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./desktop.png)
+![](./mobile.png)
 
 ### Links
 
@@ -52,14 +53,17 @@ Users should be able to:
 
 ### What I learned
 
+-   TBC
+
 ### Useful resources
 
 -   [Firebase - Back to the Basics](https://www.youtube.com/watch?v=q5J5ho7YUhA)
 -   [React Authentication Crash Course With Firebase And Routing](https://www.youtube.com/watch?v=PKwu15ldZ7k)
--   [TEMPMAIL](https://temp-mail.org/en/)
--   [React Router - <Navigate>](https://reactrouter.com/en/main/components/navigate)
+-   [Tempmail](https://temp-mail.org/en/)
+-   [React Router - Navigate](https://reactrouter.com/en/main/components/navigate)
 
 ## Author
 
+-   Work in progress portfolio site - [darryn-codes](https://www.darryncodes.co.uk)
 -   Frontend Mentor - [@darryncodes](https://www.frontendmentor.io/profile/darryncodes)
 -   Twitter - [@darryncodes](https://twitter.com/darryncodes)

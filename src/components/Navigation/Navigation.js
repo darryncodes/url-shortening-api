@@ -30,13 +30,12 @@ function Navigation() {
                         <Nav.Link href="#resource">Resources</Nav.Link>
                     </Nav>
                     <Nav className={`${styles.nav__link} ms-auto`}>
-                        <Nav.Link className={styles.nav__login} href="#login">
-                            <Link
-                                to="/login"
-                                style={{ textDecoration: "none" }}
-                            >
-                                Log in
-                            </Link>
+                        <Nav.Link
+                            className={styles.nav__login}
+                            to="/login"
+                            style={{ textDecoration: "none" }}
+                        >
+                            Log in
                         </Nav.Link>
                         <Button className={styles.nav__btn} variant="success">
                             <Link
