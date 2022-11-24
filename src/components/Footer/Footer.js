@@ -17,13 +17,19 @@ function Footer() {
                     <h3 className={styles.footer__heading}>Features</h3>
                     <ul>
                         <li>
-                            <a href="/#">Link shortening</a>
+                            <a href="/#" className={styles.footer__link}>
+                                Link shortening
+                            </a>
                         </li>
                         <li>
-                            <a href="/#">Branded links</a>
+                            <a href="/#" className={styles.footer__link}>
+                                Branded links
+                            </a>
                         </li>
                         <li>
-                            <a href="/#">Analytics</a>
+                            <a href="/#" className={styles.footer__link}>
+                                Analytics
+                            </a>
                         </li>
                     </ul>
                 </Col>
@@ -31,13 +37,19 @@ function Footer() {
                     <h3 className={styles.footer__heading}>Resources</h3>
                     <ul>
                         <li>
-                            <a href="/#">Blog</a>
+                            <a href="/#" className={styles.footer__link}>
+                                Blog
+                            </a>
                         </li>
                         <li>
-                            <a href="/#">Developers</a>
+                            <a href="/#" className={styles.footer__link}>
+                                Developers
+                            </a>
                         </li>
                         <li>
-                            <a href="/#">Support</a>
+                            <a href="/#" className={styles.footer__link}>
+                                Support
+                            </a>
                         </li>
                     </ul>
                 </Col>
@@ -45,21 +57,29 @@ function Footer() {
                     <h3 className={styles.footer__heading}>Company</h3>
                     <ul>
                         <li>
-                            <a href="/#">About</a>
+                            <a href="/#" className={styles.footer__link}>
+                                About
+                            </a>
                         </li>
                         <li>
-                            <a href="/#">Our team</a>
+                            <a href="/#" className={styles.footer__link}>
+                                Our team
+                            </a>
                         </li>
                         <li>
-                            <a href="/#">Careers</a>
+                            <a href="/#" className={styles.footer__link}>
+                                Careers
+                            </a>
                         </li>
                         <li>
-                            <a href="/#">Contact</a>
+                            <a href="/#" className={styles.footer__link}>
+                                Contact
+                            </a>
                         </li>
                     </ul>
                 </Col>
                 <Col>
-                    <ul className="d-flex gap-2">
+                    <ul className="d-flex">
                         <li>
                             <a href="/#">
                                 <svg

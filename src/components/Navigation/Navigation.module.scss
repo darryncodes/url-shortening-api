@@ -40,13 +40,11 @@
             }
         }
 
-        a:hover,
-        a:active,
-        a:visited {
-            color: $white !important;
+        a:hover {
+            color: $white;
 
             @media only screen and (min-width: $bp-md) {
-                color: unset !important;
+                color: $very-dark-violet !important;
             }
         }
     }
@@ -83,11 +81,11 @@
         border-radius: 2rem;
         padding: 0.375rem 0;
         border: 2px solid transparent !important;
+        color: $white !important;
 
         @media only screen and (min-width: $bp-md) {
             width: auto;
             padding: 0.375rem 0.75rem;
-            color: $white !important;
 
             &:focus {
                 border: 2px solid $black !important;

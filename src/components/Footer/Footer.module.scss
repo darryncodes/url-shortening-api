@@ -30,6 +30,24 @@
             fill: $cyan;
         }
     }
+
+    &__link {
+        text-decoration: none !important;
+
+        &:hover {
+            color: $cyan !important;
+        }
+
+        &:focus {
+            outline: 2px solid $white !important;
+            outline-offset: 3px;
+            border-radius: 0.125rem;
+        }
+
+        &:focus-visible {
+            color: none;
+        }
+    }
 }
 
 ul {
@@ -39,25 +57,11 @@ ul {
 
 li {
     padding-bottom: 0.45rem;
-}
-
-a {
-    text-decoration: none !important;
-
-    &:hover {
-        color: $cyan !important;
-    }
-
-    &:focus {
-        outline: 2px solid $white !important;
-        outline-offset: 3px;
-        border-radius: 0.125rem;
-    }
+    margin-right: 1rem;
 }
 
 svg {
     stroke: $white;
-    margin-right: 1rem;
 }
 
 svg:hover {
