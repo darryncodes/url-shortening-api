@@ -7,6 +7,7 @@ import styles from "./Input.module.scss";
 function Input(props) {
     const [shortLink, setShortLink] = useState("");
     const [input, setInput] = useState("");
+    const [timer, setTimer] = useState("");
 
     function handleInput(e) {
         setInput(e.target.value);
@@ -23,9 +24,14 @@ function Input(props) {
             } catch (err) {}
         };
 
-        if (input.length) {
-            getData();
-        }
+        clearTimeout(timer);
+        const newTimer = setTimeout(() => {
+            if (input.length) {
+                getData();
+            }
+        }, 500);
+        setTimer(newTimer);
+        // eslint-disable-next-line
     }, [input]);
 
     function handleSubmit(e) {

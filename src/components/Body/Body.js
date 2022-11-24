@@ -11,7 +11,14 @@ function Body() {
 
     const linkHandler = (originalLink, shortLink) => {
         setLinks((prevState) => {
-            return [...prevState, { link: originalLink, short: shortLink }];
+            return [
+                ...prevState,
+                {
+                    link: originalLink,
+                    short: shortLink,
+                    id: Math.random().toString(),
+                },
+            ];
         });
     };
 

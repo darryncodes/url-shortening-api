@@ -18,7 +18,7 @@ function Output(props) {
     return (
         <>
             {props.output.map((links) => (
-                <div className={styles.output}>
+                <div className={styles.output} key={links.id}>
                     <p className={styles.output__link}>{links.link}</p>
                     <div className={styles.output__result}>
                         <p
