@@ -8,7 +8,7 @@ function Links() {
     return (
         <section className={styles.links}>
             <h2 className={styles.links__heading}>Boost your links today</h2>
-            <Button variant="success" className="mt-2">
+            <Button variant="success" className={styles.focus}>
                 Get started
             </Button>
         </section>

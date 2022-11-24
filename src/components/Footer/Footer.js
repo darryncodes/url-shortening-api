@@ -59,7 +59,7 @@ function Footer() {
                     </ul>
                 </Col>
                 <Col>
-                    <ul className="d-flex">
+                    <ul className="d-flex gap-2">
                         <li>
                             <a href="/#">
                                 <svg

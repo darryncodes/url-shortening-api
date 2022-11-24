@@ -17,3 +17,9 @@
         color: $white;
     }
 }
+
+.focus:focus {
+    outline: 2px solid $white !important;
+    outline-offset: 1px;
+    border-radius: 2rem;
+}

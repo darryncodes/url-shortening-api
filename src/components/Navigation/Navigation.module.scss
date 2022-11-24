@@ -3,8 +3,14 @@
 .nav {
     &__toggle {
         border: none !important;
-        outline: none;
+        // outline: none;
         margin-bottom: 0.5rem;
+
+        &:focus {
+            outline: 2px solid $black !important;
+            border-radius: 0.25rem;
+            box-shadow: none !important;
+        }
     }
 
     &__mobile {
@@ -46,6 +52,9 @@
 
     &__login {
         position: relative;
+        @media only screen and (min-width: $bp-md) {
+            margin-right: 1rem;
+        }
     }
 
     &__login::before {
@@ -65,13 +74,32 @@
     }
 
     &__btn {
-        color: $white;
+        background-color: $cyan;
         font-weight: 700;
         width: 85%;
         margin: 0 auto;
+        border-radius: 2rem;
+        padding: 0.375rem 0;
+        border: 2px solid transparent !important;
 
         @media only screen and (min-width: $bp-md) {
             width: auto;
+            padding: 0.375rem 0.75rem;
+            color: $white !important;
+
+            &:focus {
+                border: 2px solid $black !important;
+                border-radius: 2rem;
+            }
+        }
+    }
+
+    &__focus:focus {
+        outline: 2px solid transparent !important;
+
+        @media only screen and (min-width: $bp-md) {
+            outline: 2px solid $black !important;
+            border-radius: 0.25rem;
         }
     }
 }

@@ -19,7 +19,7 @@ function Hero() {
                         Build your brand's recognition and get detailed insights
                         on how your links are performing.
                     </p>
-                    <Button variant="success" className="mt-2">
+                    <Button variant="success" className={styles.focus}>
                         Get started
                     </Button>
                 </div>

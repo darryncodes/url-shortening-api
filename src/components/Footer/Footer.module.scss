@@ -47,6 +47,12 @@ a {
     &:hover {
         color: $cyan !important;
     }
+
+    &:focus {
+        outline: 2px solid $white !important;
+        outline-offset: 3px;
+        border-radius: 0.125rem;
+    }
 }
 
 svg {
