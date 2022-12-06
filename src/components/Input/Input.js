@@ -31,13 +31,24 @@ function Input(props) {
             }
         }, 500);
         setTimer(newTimer);
+
         // eslint-disable-next-line
     }, [input]);
+
+    function isValidUrl(url) {
+        let validUrl =
+            /(ftp:\/\/|www\.|https?:\/\/){1}[a-zA-Z0-9u00a1-\uffff0-]{2,}\.[a-zA-Z0-9u00a1-\uffff0-]{2,}(\S*)/;
+        return validUrl.test(url);
+    }
 
     function handleSubmit(e) {
         e.preventDefault();
 
         if (input.trim().length === 0) {
+            return;
+        }
+
+        if (isValidUrl(input) === false) {
             return;
         }
 
