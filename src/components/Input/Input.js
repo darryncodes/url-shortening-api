@@ -8,6 +8,8 @@ function Input(props) {
     const [shortLink, setShortLink] = useState("");
     const [input, setInput] = useState("");
     const [timer, setTimer] = useState("");
+    const [message, setMessage] = useState("");
+    const [error, setError] = useState(false);
 
     function handleInput(e) {
         setInput(e.target.value);
@@ -32,6 +34,11 @@ function Input(props) {
         }, 500);
         setTimer(newTimer);
 
+        if (input.length) {
+            setMessage("");
+            setError(false);
+        }
+
         // eslint-disable-next-line
     }, [input]);
 
@@ -45,10 +52,14 @@ function Input(props) {
         e.preventDefault();
 
         if (input.trim().length === 0) {
+            setMessage("Please add a link");
+            setError(true);
             return;
         }
 
         if (isValidUrl(input) === false) {
+            setMessage("Please enter a valid url");
+            setError(true);
             return;
         }
 
@@ -68,7 +79,9 @@ function Input(props) {
                     placeholder="Shorten a link here..."
                     value={input}
                     onChange={handleInput}
+                    className={error && styles.error}
                 />
+                {message && <span className={styles.message}>{message}</span>}
                 <Button variant="success" className={styles.btn} type="submit">
                     Shorten it!
                 </Button>
