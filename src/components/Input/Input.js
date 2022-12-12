@@ -77,7 +77,7 @@ function Input(props) {
                     type="text"
                     id="shorten"
                     placeholder="Shorten a link here..."
-                    value={input}
+                    value={input.toLowerCase()}
                     onChange={handleInput}
                     className={error && styles.error}
                 />
