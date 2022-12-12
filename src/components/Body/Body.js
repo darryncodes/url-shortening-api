@@ -24,7 +24,7 @@ function Body() {
 
     return (
         <section className={styles.body}>
-            <Container className="position-relative">
+            <Container>
                 <Input input={linkHandler} />
                 <Output output={links} />
                 <div className={styles.body__header}>

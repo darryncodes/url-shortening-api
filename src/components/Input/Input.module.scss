@@ -1,18 +1,5 @@
 @import "./../../variables.scss";
 
-.link-shortener {
-    position: absolute;
-    left: 12px;
-    right: 12px;
-    top: -168px;
-
-    @media only screen and (min-width: $bp-md) {
-        left: 12px;
-        right: 12px;
-        top: -116px;
-    }
-}
-
 .form {
     padding: 2rem;
     margin-bottom: 1rem;

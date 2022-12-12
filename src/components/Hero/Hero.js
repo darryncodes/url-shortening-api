@@ -8,7 +8,7 @@ import heroImage from "../../img/illustration-working.svg";
 
 function Hero() {
     return (
-        <Container className="position-relative">
+        <Container>
             <header>
                 <div>
                     <img src={heroImage} alt="" />
