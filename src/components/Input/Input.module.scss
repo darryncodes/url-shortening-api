@@ -39,6 +39,7 @@ input {
 input.error {
     outline: 2px solid $red;
     color: $red;
+    border-radius: 0.65rem;
 }
 input.error::placeholder {
     color: $red;
