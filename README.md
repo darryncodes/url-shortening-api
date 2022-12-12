@@ -34,8 +34,8 @@ Users should be able to:
 
 ### Links
 
--   [GitHub repo]()
--   [Live URL]()
+-   [GitHub repo](https://github.com/darryncodes/url-shortening-api)
+-   [Live URL](https://darryncodes.github.io/url-shortening-api/)
 
 ## My process
 
