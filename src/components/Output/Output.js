@@ -1,33 +1,36 @@
-import React, { useEffect, useRef, useState } from "react";
-import Button from "react-bootstrap/Button";
+import React, { useEffect, useRef, useState } from 'react';
+import Button from 'react-bootstrap/Button';
 
-import styles from "./Output.module.scss";
+import styles from './Output.module.scss';
 
 function Output(props) {
-    const shortLink = useRef("");
-    const [copySuccess, setCopySuccess] = useState("Copy");
+    const shortLink = useRef('');
+    const [copySuccess, setCopySuccess] = useState('Copy');
     const [localLinks, setLocalLinks] = useState([]);
 
     const copyToClipboard = () => {
         navigator.clipboard.writeText(shortLink.current.innerText);
-        setCopySuccess("Copied!");
+        setCopySuccess('Copied!');
         setTimeout(() => {
-            setCopySuccess("Copy");
+            setCopySuccess('Copy');
         }, 1750);
     };
 
     useEffect(() => {
         const saveToLocalStorage = () => {
-            localStorage.setItem("links", JSON.stringify(props.output));
+            localStorage.setItem(
+                'links',
+                JSON.stringify([...localLinks, ...props.output])
+            );
         };
         if (props.output.length !== 0) {
             saveToLocalStorage();
         }
-    }, [props.output]);
+    }, [localLinks, props.output]);
 
     useEffect(() => {
         const checkLocalStorage = () => {
-            const links = JSON.parse(localStorage.getItem("links"));
+            const links = JSON.parse(localStorage.getItem('links'));
             if (links) {
                 setLocalLinks(links);
             }
@@ -44,7 +47,7 @@ function Output(props) {
                     <p className={styles.output__link}>{links.link}</p>
                     <div className={styles.output__result}>
                         <p
-                            className={styles["output__shortened-link"]}
+                            className={styles['output__shortened-link']}
                             ref={shortLink}
                         >
                             {links.short}
