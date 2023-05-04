@@ -29,15 +29,20 @@ $bp-xxl: 87.5em; // 1400x
 // Bootstrap scss theme change
 
 $theme-colors: (
-    "success": $cyan,
-    "danger": #ff0000,
+    'success': $cyan,
+    'danger': #ff0000,
 );
 
 $btn-border-radius: 3rem;
 $btn-link-color: white;
 $link-color: $greyish-violet;
 
-@import "bootstrap/scss/bootstrap";
+.container {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+}
+
+@import 'bootstrap/scss/bootstrap';
 
 .btn {
     color: $white;
