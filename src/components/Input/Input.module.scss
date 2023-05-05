@@ -1,9 +1,12 @@
-@import "./../../variables.scss";
+@import './../../variables.scss';
 
 .form {
     padding: 2rem;
     margin-bottom: 1rem;
     border-radius: 0.65rem;
+    background-image: url(./../../img/bg-boost-mobile.svg);
+    background-position: center;
+    background-repeat: no-repeat;
     background-color: $dark-violet;
     display: flex;
     flex-direction: column;
@@ -11,6 +14,8 @@
     position: relative;
 
     @media only screen and (min-width: $bp-md) {
+        padding: 3rem 2rem;
+        background-image: url(./../../img/bg-boost-desktop.svg);
         flex-direction: row;
         justify-content: center;
     }
