@@ -1,4 +1,4 @@
-@import "./../../variables.scss";
+@import './../../variables.scss';
 
 .output {
     background-color: $white;
@@ -57,5 +57,13 @@
             width: auto;
             margin-left: 1rem;
         }
+    }
+}
+
+.output__btn + .output__btn {
+    margin-top: 1rem;
+
+    @media only screen and (min-width: $bp-md) {
+        margin-top: 0;
     }
 }

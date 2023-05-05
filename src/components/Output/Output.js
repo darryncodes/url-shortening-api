@@ -40,6 +40,17 @@ function Output(props) {
 
     const finalLinks = [...localLinks, ...props.output];
 
+    const handleDelete = (e) => {
+        e.target.parentElement.parentElement.remove();
+
+        const text = e.target.parentElement.firstChild.textContent;
+
+        const linkIndex = finalLinks.findIndex((x) => x.short === text);
+
+        finalLinks.splice(linkIndex, 1);
+        localStorage.setItem('links', JSON.stringify(finalLinks));
+    };
+
     return (
         <>
             {finalLinks.map((links) => (
@@ -58,6 +69,13 @@ function Output(props) {
                             onClick={copyToClipboard}
                         >
                             {copySuccess}
+                        </Button>
+                        <Button
+                            variant="danger"
+                            className={styles.output__btn}
+                            onClick={handleDelete}
+                        >
+                            Delete
                         </Button>
                     </div>
                 </div>
