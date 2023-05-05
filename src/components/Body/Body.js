@@ -23,7 +23,7 @@ function Body() {
     };
 
     return (
-        <main className={styles.body}>
+        <section className={styles.body}>
             <Container>
                 <Input input={linkHandler} />
                 <Output output={links} />
@@ -67,7 +67,7 @@ function Body() {
                     </div>
                 </div>
             </Container>
-        </main>
+        </section>
     );
 }
 

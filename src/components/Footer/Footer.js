@@ -1,10 +1,10 @@
-import React from "react";
+import React from 'react';
 
-import logo from "./../../img/logo-footer.svg";
-import styles from "./Footer.module.scss";
+import logo from './../../img/logo-footer.svg';
+import styles from './Footer.module.scss';
 
-import Container from "react-bootstrap/Container";
-import Col from "react-bootstrap/Col";
+import Container from 'react-bootstrap/Container';
+import Col from 'react-bootstrap/Col';
 
 function Footer() {
     return (
@@ -17,17 +17,29 @@ function Footer() {
                     <h3 className={styles.footer__heading}>Features</h3>
                     <ul>
                         <li>
-                            <a href="/#" className={styles.footer__link}>
+                            <a
+                                href="/#"
+                                className={styles.footer__link}
+                                aria-hidden="true"
+                            >
                                 Link shortening
                             </a>
                         </li>
                         <li>
-                            <a href="/#" className={styles.footer__link}>
+                            <a
+                                href="/#"
+                                className={styles.footer__link}
+                                aria-hidden="true"
+                            >
                                 Branded links
                             </a>
                         </li>
                         <li>
-                            <a href="/#" className={styles.footer__link}>
+                            <a
+                                href="/#"
+                                className={styles.footer__link}
+                                aria-hidden="true"
+                            >
                                 Analytics
                             </a>
                         </li>
@@ -37,17 +49,29 @@ function Footer() {
                     <h3 className={styles.footer__heading}>Resources</h3>
                     <ul>
                         <li>
-                            <a href="/#" className={styles.footer__link}>
+                            <a
+                                href="/#"
+                                className={styles.footer__link}
+                                aria-hidden="true"
+                            >
                                 Blog
                             </a>
                         </li>
                         <li>
-                            <a href="/#" className={styles.footer__link}>
+                            <a
+                                href="/#"
+                                className={styles.footer__link}
+                                aria-hidden="true"
+                            >
                                 Developers
                             </a>
                         </li>
                         <li>
-                            <a href="/#" className={styles.footer__link}>
+                            <a
+                                href="/#"
+                                className={styles.footer__link}
+                                aria-hidden="true"
+                            >
                                 Support
                             </a>
                         </li>
@@ -57,22 +81,38 @@ function Footer() {
                     <h3 className={styles.footer__heading}>Company</h3>
                     <ul>
                         <li>
-                            <a href="/#" className={styles.footer__link}>
+                            <a
+                                href="/#"
+                                className={styles.footer__link}
+                                aria-hidden="true"
+                            >
                                 About
                             </a>
                         </li>
                         <li>
-                            <a href="/#" className={styles.footer__link}>
+                            <a
+                                href="/#"
+                                className={styles.footer__link}
+                                aria-hidden="true"
+                            >
                                 Our team
                             </a>
                         </li>
                         <li>
-                            <a href="/#" className={styles.footer__link}>
+                            <a
+                                href="/#"
+                                className={styles.footer__link}
+                                aria-hidden="true"
+                            >
                                 Careers
                             </a>
                         </li>
                         <li>
-                            <a href="/#" className={styles.footer__link}>
+                            <a
+                                href="/#"
+                                className={styles.footer__link}
+                                aria-hidden="true"
+                            >
                                 Contact
                             </a>
                         </li>
@@ -81,7 +121,7 @@ function Footer() {
                 <Col>
                     <ul className="d-flex">
                         <li>
-                            <a href="/#">
+                            <a href="/#" aria-hidden="true">
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     width="24"
@@ -98,7 +138,7 @@ function Footer() {
                             </a>
                         </li>
                         <li>
-                            <a href="/#">
+                            <a href="/#" aria-hidden="true">
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     width="24"
@@ -115,7 +155,7 @@ function Footer() {
                             </a>
                         </li>
                         <li>
-                            <a href="/#">
+                            <a href="/#" aria-hidden="true">
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     viewBox="0 0 384 512"
@@ -128,7 +168,7 @@ function Footer() {
                             </a>
                         </li>
                         <li>
-                            <a href="/#">
+                            <a href="/#" aria-hidden="true">
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     width="24"
