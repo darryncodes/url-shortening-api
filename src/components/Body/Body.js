@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 
-import Container from "react-bootstrap/Container";
-import Input from "../Input/Input";
-import Output from "../Output/Output";
+import Container from 'react-bootstrap/Container';
+import Input from '../Input/Input';
+import Output from '../Output/Output';
 
-import styles from "./Body.module.scss";
+import styles from './Body.module.scss';
 
 function Body() {
     const [links, setLinks] = useState([]);
@@ -23,7 +23,7 @@ function Body() {
     };
 
     return (
-        <section className={styles.body}>
+        <main className={styles.body}>
             <Container>
                 <Input input={linkHandler} />
                 <Output output={links} />
@@ -36,7 +36,7 @@ function Body() {
                 </div>
                 <div className={styles.body__cards}>
                     <div
-                        className={`${styles.body__card} ${styles["body__card--one"]}`}
+                        className={`${styles.body__card} ${styles['body__card--one']}`}
                     >
                         <h3>Brand Recognition</h3>
                         <p>
@@ -46,7 +46,7 @@ function Body() {
                         </p>
                     </div>
                     <div
-                        className={`${styles.body__card} ${styles["body__card--two"]}`}
+                        className={`${styles.body__card} ${styles['body__card--two']}`}
                     >
                         <h3>Detailed Records</h3>
                         <p>
@@ -56,7 +56,7 @@ function Body() {
                         </p>
                     </div>
                     <div
-                        className={`${styles.body__card} ${styles["body__card--three"]}`}
+                        className={`${styles.body__card} ${styles['body__card--three']}`}
                     >
                         <h3>Fully Customizable</h3>
                         <p>
@@ -67,7 +67,7 @@ function Body() {
                     </div>
                 </div>
             </Container>
-        </section>
+        </main>
     );
 }
 
