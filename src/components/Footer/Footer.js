@@ -20,7 +20,7 @@ function Footer() {
                             <a
                                 href="/#"
                                 className={styles.footer__link}
-                                aria-hidden="true"
+                                aria-label="Find out more about our link shortening feature"
                             >
                                 Link shortening
                             </a>
@@ -29,7 +29,7 @@ function Footer() {
                             <a
                                 href="/#"
                                 className={styles.footer__link}
-                                aria-hidden="true"
+                                aria-label="Find out more about our branded links feature"
                             >
                                 Branded links
                             </a>
@@ -38,7 +38,7 @@ function Footer() {
                             <a
                                 href="/#"
                                 className={styles.footer__link}
-                                aria-hidden="true"
+                                aria-label="Find out more about our analytics feature"
                             >
                                 Analytics
                             </a>
@@ -52,7 +52,7 @@ function Footer() {
                             <a
                                 href="/#"
                                 className={styles.footer__link}
-                                aria-hidden="true"
+                                aria-label="Read our blog"
                             >
                                 Blog
                             </a>
@@ -61,7 +61,7 @@ function Footer() {
                             <a
                                 href="/#"
                                 className={styles.footer__link}
-                                aria-hidden="true"
+                                aria-label="Resources for developers"
                             >
                                 Developers
                             </a>
@@ -70,7 +70,7 @@ function Footer() {
                             <a
                                 href="/#"
                                 className={styles.footer__link}
-                                aria-hidden="true"
+                                aria-label="Find out more about our support"
                             >
                                 Support
                             </a>
@@ -84,7 +84,7 @@ function Footer() {
                             <a
                                 href="/#"
                                 className={styles.footer__link}
-                                aria-hidden="true"
+                                aria-label="Find out about us"
                             >
                                 About
                             </a>
@@ -93,7 +93,7 @@ function Footer() {
                             <a
                                 href="/#"
                                 className={styles.footer__link}
-                                aria-hidden="true"
+                                aria-label="Find out more about our team"
                             >
                                 Our team
                             </a>
@@ -102,7 +102,7 @@ function Footer() {
                             <a
                                 href="/#"
                                 className={styles.footer__link}
-                                aria-hidden="true"
+                                aria-label="Find out more about a career at Shortly"
                             >
                                 Careers
                             </a>
@@ -111,7 +111,7 @@ function Footer() {
                             <a
                                 href="/#"
                                 className={styles.footer__link}
-                                aria-hidden="true"
+                                aria-label="Find out how to contact us"
                             >
                                 Contact
                             </a>
