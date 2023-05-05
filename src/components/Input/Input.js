@@ -1,14 +1,14 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect } from 'react';
 
-import Button from "react-bootstrap/Button";
+import Button from 'react-bootstrap/Button';
 
-import styles from "./Input.module.scss";
+import styles from './Input.module.scss';
 
 function Input(props) {
-    const [shortLink, setShortLink] = useState("");
-    const [input, setInput] = useState("");
-    const [timer, setTimer] = useState("");
-    const [message, setMessage] = useState("");
+    const [shortLink, setShortLink] = useState('');
+    const [input, setInput] = useState('');
+    const [timer, setTimer] = useState('');
+    const [message, setMessage] = useState('');
     const [error, setError] = useState(false);
 
     function handleInput(e) {
@@ -35,7 +35,7 @@ function Input(props) {
         setTimer(newTimer);
 
         if (input.length) {
-            setMessage("");
+            setMessage('');
             setError(false);
         }
 
@@ -52,23 +52,23 @@ function Input(props) {
         e.preventDefault();
 
         if (input.trim().length === 0) {
-            setMessage("Please add a link");
+            setMessage('Please add a link');
             setError(true);
             return;
         }
 
         if (isValidUrl(input) === false) {
-            setMessage("Please enter a valid url");
+            setMessage('Please enter a valid url');
             setError(true);
             return;
         }
 
         props.input(input, shortLink);
-        setInput("");
+        setInput('');
     }
 
     return (
-        <div className={styles["link-shortener"]}>
+        <div className={styles['link-shortener']}>
             <form onSubmit={handleSubmit} className={styles.form}>
                 <label htmlFor="shorten" className="sr-only">
                     Shorten a link here
@@ -79,7 +79,7 @@ function Input(props) {
                     placeholder="Shorten a link here..."
                     value={input.toLowerCase()}
                     onChange={handleInput}
-                    className={error && styles.error}
+                    className={error ? styles.error : null}
                 />
                 {message && <span className={styles.message}>{message}</span>}
                 <Button variant="success" className={styles.btn} type="submit">
