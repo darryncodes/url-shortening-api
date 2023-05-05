@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/url-shortening-api/static/css/main.2e824a0d.css",
+    "main.css": "/url-shortening-api/static/css/main.64dcbef8.css",
     "main.js": "/url-shortening-api/static/js/main.eeadef4b.js",
     "static/media/illustration-working.svg": "/url-shortening-api/static/media/illustration-working.c9b5ef5452363d8be3df709375d50bd0.svg",
     "static/media/logo-footer.svg": "/url-shortening-api/static/media/logo-footer.f4ffcbaea8b8e859063c670a1d640ac0.svg",
@@ -11,11 +11,11 @@
     "index.html": "/url-shortening-api/index.html",
     "static/media/icon-detailed-records.svg": "/url-shortening-api/static/media/icon-detailed-records.265c8aea77b546e08ba3.svg",
     "static/media/bg-boost-mobile.svg": "/url-shortening-api/static/media/bg-boost-mobile.94a956515e88947be637.svg",
-    "main.2e824a0d.css.map": "/url-shortening-api/static/css/main.2e824a0d.css.map",
+    "main.64dcbef8.css.map": "/url-shortening-api/static/css/main.64dcbef8.css.map",
     "main.eeadef4b.js.map": "/url-shortening-api/static/js/main.eeadef4b.js.map"
   },
   "entrypoints": [
-    "static/css/main.2e824a0d.css",
+    "static/css/main.64dcbef8.css",
     "static/js/main.eeadef4b.js"
   ]
 }
