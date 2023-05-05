@@ -121,7 +121,7 @@ function Footer() {
                 <Col>
                     <ul className="d-flex">
                         <li>
-                            <a href="/#" aria-hidden="true">
+                            <a href="/#" aria-label="Follow us on Facebook">
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     width="24"
@@ -138,7 +138,7 @@ function Footer() {
                             </a>
                         </li>
                         <li>
-                            <a href="/#" aria-hidden="true">
+                            <a href="/#" aria-label="Follow us on Twitter">
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     width="24"
@@ -155,7 +155,7 @@ function Footer() {
                             </a>
                         </li>
                         <li>
-                            <a href="/#" aria-hidden="true">
+                            <a href="/#" aria-label="Follow us on Pinterest">
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     viewBox="0 0 384 512"
@@ -168,7 +168,7 @@ function Footer() {
                             </a>
                         </li>
                         <li>
-                            <a href="/#" aria-hidden="true">
+                            <a href="/#" aria-label="Follow us on Instagram">
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     width="24"
