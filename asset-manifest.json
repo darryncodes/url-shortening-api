@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/url-shortening-api/static/css/main.c372667f.css",
-    "main.js": "/url-shortening-api/static/js/main.fb36c7a4.js",
+    "main.css": "/url-shortening-api/static/css/main.2e824a0d.css",
+    "main.js": "/url-shortening-api/static/js/main.9bd57245.js",
     "static/media/illustration-working.svg": "/url-shortening-api/static/media/illustration-working.c9b5ef5452363d8be3df709375d50bd0.svg",
     "static/media/logo-footer.svg": "/url-shortening-api/static/media/logo-footer.f4ffcbaea8b8e859063c670a1d640ac0.svg",
     "static/media/logo.svg": "/url-shortening-api/static/media/logo.834643034343520f3b4d7e43111ed4d8.svg",
@@ -11,11 +11,11 @@
     "index.html": "/url-shortening-api/index.html",
     "static/media/icon-detailed-records.svg": "/url-shortening-api/static/media/icon-detailed-records.265c8aea77b546e08ba3.svg",
     "static/media/bg-boost-mobile.svg": "/url-shortening-api/static/media/bg-boost-mobile.94a956515e88947be637.svg",
-    "main.c372667f.css.map": "/url-shortening-api/static/css/main.c372667f.css.map",
-    "main.fb36c7a4.js.map": "/url-shortening-api/static/js/main.fb36c7a4.js.map"
+    "main.2e824a0d.css.map": "/url-shortening-api/static/css/main.2e824a0d.css.map",
+    "main.9bd57245.js.map": "/url-shortening-api/static/js/main.9bd57245.js.map"
   },
   "entrypoints": [
-    "static/css/main.c372667f.css",
-    "static/js/main.fb36c7a4.js"
+    "static/css/main.2e824a0d.css",
+    "static/js/main.9bd57245.js"
   ]
 }
