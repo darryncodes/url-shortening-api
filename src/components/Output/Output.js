@@ -5,14 +5,13 @@ import styles from './Output.module.scss';
 
 function Output(props) {
     const shortLink = useRef('');
-    const [copySuccess, setCopySuccess] = useState('Copy');
     const [localLinks, setLocalLinks] = useState([]);
 
-    const copyToClipboard = () => {
+    const copyToClipboard = (e) => {
         navigator.clipboard.writeText(shortLink.current.innerText);
-        setCopySuccess('Copied!');
+        e.target.textContent = 'Copied!';
         setTimeout(() => {
-            setCopySuccess('Copy');
+            e.target.textContent = 'Copy';
         }, 1750);
     };
 
@@ -68,7 +67,7 @@ function Output(props) {
                             className={styles.output__btn}
                             onClick={copyToClipboard}
                         >
-                            {copySuccess}
+                            Copy
                         </Button>
                         <Button
                             variant="danger"
